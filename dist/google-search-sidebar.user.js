@@ -132,7 +132,7 @@ GM_addStyle(`
   #appbar,
   #center_col,
   #rcnt div.M8OgIe {
-    margin-left: var(--user-sidebar-width); /* 1. */
+    //margin-left: var(--user-sidebar-width); /* 1. */
   }
 
   /**
@@ -200,8 +200,16 @@ GM_addStyle(`
 
   /**
    * Hide search time on sidebar
+   * Hide annoying things
    */
+
+  #result-stats {
+    display: none;
+  }
   #result-stats > nobr {
+    display: none;
+  }
+  #slim_appbar {
     display: none;
   }
 `)
